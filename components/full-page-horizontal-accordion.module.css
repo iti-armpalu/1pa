@@ -1,0 +1,132 @@
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.barNavigation {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--color-tan);
+  display: grid;
+  grid-template-rows: 100%;
+  overflow: hidden;
+
+  justify-content: end;
+}
+
+
+ .navList, .navItem {
+	 margin: 0;
+	 padding: 0;
+	 list-style-type: none;
+}
+
+
+ .navList {
+	 grid-row: 1;
+	 display: grid;
+	 height: 100%;
+	 counter-reset: list;
+}
+
+
+ .navItem {
+	 --tx: calc(-100% - var(--nav-item-offset));
+	 display: grid;
+	 grid-template-columns: 1fr 20% auto;
+	 position: absolute;
+	 height: 100%;
+	 width: 60vw;
+	 transition: transform var(--duration) var(--easing);
+	 margin-left: calc(var(--i) * var(--nav-item-offset));
+	 overflow: hidden;
+	 transform: translateX(var(--tx));
+	 z-index: calc(4 + var(--i));
+	 padding-right: 1vw;
+	 animation: slide-down 1s cubic-bezier(0.5, 0, 0.3, 1);
+	 animation-delay: calc(var(--i) * .15s);
+	 animation-fill-mode: backwards;
+   background-color: green;
+   border: 1px solid red;
+}
+
+
+.navItem:hover:not(:focus):after {
+	 transform: none;
+}
+
+
+ .navItem:focus {
+	 transform: translateX(-2vw);
+	 outline: none;
+}
+
+
+ .navItem:focus ~ .navItem {
+	 transform: none;
+}
+
+
+ .navItem:focus-within {
+	 transform: translateX(-2vw);
+}
+
+
+ .navItem:focus-within ~ .navItem {
+	 transform: none;
+} 
+
+
+.navItem:before {
+	 counter-increment: list;
+	 content: counter(list) ".";
+	 display: block;
+	 grid-column: 0.75;
+	 text-align: right;
+	 font-size: 8vmin;
+	 padding: 1vw;
+	 padding-top: 10vh;
+	 mix-blend-mode: soft-light;
+	 z-index: 1;
+	 animation: inherit;
+	 animation-name: slide-up;
+} 
+
+
+ @keyframes slide-up {
+	 from {
+		 transform: translateY(130%);
+	}
+	 to {
+		 transform: translateY(0);
+	}
+}
+
+
+ .navItem:after {
+	 content: '';
+	 position: absolute;
+	 top: 0;
+	 left: 1vw;
+	 right: 0;
+	 width: 100%;
+	 height: 100%;
+	 background-color: var(--color);
+	 transform: translateX(1vw);
+	 transition: transform var(--easing) var(--duration);
+}
+
+
+ @keyframes slide-down {
+	 from {
+		 transform: translateY(-100%) translateX(var(--tx));
+		 pointer-events: none;
+	}
+	 to {
+		 transform: translateY(0) translateX(var(--tx));
+		 pointer-events: none;
+	}
+}
