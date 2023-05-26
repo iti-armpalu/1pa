@@ -49,7 +49,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.home}>
-        <main className={styles.main}>
+
+        <h1>Hello</h1>
+        {/* <main className={styles.main}>
           {navElements.map((navElement) => (
             <AccordionItem 
               key={navElement.id} 
@@ -58,7 +60,7 @@ export default function Home() {
               handleClick={handleClick}
             />
           ))}
-        </main>
+        </main> */}
       </div>
     </Fragment>
   );

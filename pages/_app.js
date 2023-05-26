@@ -3,19 +3,29 @@ import Head from "next/head";
 
 import Layout from "@/components/layout/layout";
 
-// add bootstrap css
+import 'react-modal-video/css/modal-video.css';
+
+
+// Add bootstrap css
 import "bootstrap/dist/css/bootstrap.css";
 
-// add global styles (needs to come after Bootstrap import)
+// Add global styles (needs to come after Bootstrap import)
 import "../styles/globals.css";
 
-// add fontawesome
+
+
+// Add fontawesome
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "../node_modules/@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
 
-// add gsap
-import { gsap } from "gsap";
+// Add Google font
+import { PT_Mono } from "@next/font/google";
+const ptMono = PT_Mono({
+  weight: ["400"],
+  style: ["normal"],
+  subsets: ["latin"]
+});
 
 
 export default function App({ Component, pageProps }) {
@@ -28,7 +38,9 @@ export default function App({ Component, pageProps }) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Component {...pageProps} />
+      <main className={ptMono.className}>
+        <Component {...pageProps} />
+      </main>
     </Layout>
   );
 }

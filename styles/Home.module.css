@@ -1,9 +1,12 @@
 .home {
-  background-color: #fff;
+  /* background-color: #fff; */
     margin-bottom: -120px;
     min-width: calc(100vw - 60px);
     overflow: hidden;
     padding-top: 60px;
+    
+
+
 }
 
 .home main {

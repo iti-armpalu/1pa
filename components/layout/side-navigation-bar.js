@@ -13,16 +13,20 @@ function SideNavigationBar(props) {
   const navElements = [
     {
       id: 1,
-      name: "Expertise",
+      name: "Featured Theme",
     },
     {
       id: 2,
-      name: "People",
+      name: "Discover Themes",
     },
     {
       id: 3,
-      name: "The Goods",
+      name: "Meet the People",
     },
+    {
+      id: 4,
+      name: "Download Templates",
+    }
   ];
 
   return (

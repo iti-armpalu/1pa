@@ -1,12 +1,13 @@
 .wrapper {
-  background-color: #230f2c;
+  /* background-color: #230f2c; */
+  background-color: #0a2e2f;
   padding: 0 15%;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 999;
+  z-index: 1;
   /* animation: fadeIn 0.5s ease-in;
   animation-fill-mode: forwards; */
   margin-top: 60px;
@@ -64,17 +65,19 @@
 }
 
 .navTabs {
-  font-size: 95px;
+  font-size: 5.625rem;
   line-height: 100%;
-  color: #fff;
+
 }
 
 .navTabs a {
   transition: all .5s;
+  color: #fff;
 }
 
 .navTabs a:hover {
  color: #fff;
+ cursor: pointer;
 }
 
 .translucent {

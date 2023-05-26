@@ -1,7 +1,5 @@
-
 import { useState } from "react";
 import styles from "./side-navigation-bar.module.css";
-
 
 function NavItem(props) {
   const { name } = props.navItem;
@@ -9,7 +7,7 @@ function NavItem(props) {
   const [isHover, setHover] = useState(false);
 
   return (
-    <li 
+    <li
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
