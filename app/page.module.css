@@ -1,0 +1,28 @@
+
+.page {
+  padding: 2rem 2rem 2rem 4rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: left;
+}
+
+.page h1 {
+  font-family: var(--font-poiretOne);
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+.page p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .page {
+    padding: 2rem 1.25rem 2rem 1.25rem;
+  }
+}

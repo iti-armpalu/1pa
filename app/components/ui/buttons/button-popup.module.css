@@ -1,0 +1,82 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  font-size: 1rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  padding: 0 2rem;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+
+.btnBorder {
+  border: 1px solid var(--foreground);
+  -moz-border-radius: 1.25rem;
+  border-radius: 1.25rem;
+}
+
+.btn .title {
+  display: block;
+  position: relative;
+  font-size: 1rem;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform 0.3s
+    cubic-bezier(0.23, 0.65, 0.74, 1.09);
+  transition: -webkit-transform 0.3s cubic-bezier(0.23, 0.65, 0.74, 1.09);
+  -o-transition: transform 0.3s cubic-bezier(0.23, 0.65, 0.74, 1.09);
+  -moz-transition: transform 0.3s cubic-bezier(0.23, 0.65, 0.74, 1.09),
+    -moz-transform 0.3s cubic-bezier(0.23, 0.65, 0.74, 1.09);
+  transition: transform 0.3s cubic-bezier(0.23, 0.65, 0.74, 1.09);
+  transition: transform 0.3s cubic-bezier(0.23, 0.65, 0.74, 1.09),
+    -webkit-transform 0.3s cubic-bezier(0.23, 0.65, 0.74, 1.09),
+    -moz-transform 0.3s cubic-bezier(0.23, 0.65, 0.74, 1.09);
+}
+
+.btn .hover {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 2rem;
+  font-size: 1rem;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: -webkit-transform 0.3s
+    cubic-bezier(0.23, 0.65, 0.74, 1.09);
+  transition: -webkit-transform 0.3s cubic-bezier(0.23, 0.65, 0.74, 1.09);
+  -o-transition: transform 0.3s cubic-bezier(0.23, 0.65, 0.74, 1.09);
+  -moz-transition: transform 0.3s cubic-bezier(0.23, 0.65, 0.74, 1.09),
+    -moz-transform 0.3s cubic-bezier(0.23, 0.65, 0.74, 1.09);
+  transition: transform 0.3s cubic-bezier(0.23, 0.65, 0.74, 1.09);
+  transition: transform 0.3s cubic-bezier(0.23, 0.65, 0.74, 1.09),
+    -webkit-transform 0.3s cubic-bezier(0.23, 0.65, 0.74, 1.09),
+    -moz-transform 0.3s cubic-bezier(0.23, 0.65, 0.74, 1.09);
+}
+
+.btn:hover .title {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.btn:hover .hover {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+

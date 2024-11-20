@@ -1,0 +1,83 @@
+.accordionContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100vw;
+  height: calc(100vh - 60px);
+}
+
+.accordionItem {
+  position: relative;
+  width: 4rem;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  transition: flex 0.4s ease-in-out, background-color 0.3s ease;
+  border: none;
+  box-shadow: -5px -4px 10px rgba(35, 15, 44, 0.06);
+  font-size: inherit;
+  outline: 0;
+}
+
+.accordionTitle {
+  text-align: right;
+  transition: opacity 0.4s ease-in-out;
+  width: 12rem;
+  position: absolute;
+  left: 0;
+  top: 30%;
+  font-family: var(--font-poiretOne);
+  font-size: 1.5rem;
+  line-height: 3rem;
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+  transform-origin: 0 0;
+  z-index: 10;
+}
+
+.accordionContent {
+  text-align: center;
+  padding-top: 10px;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.expanded {
+  flex: 4;
+  background-color: #e0e0e0;
+  overflow-y: auto;
+}
+
+.expanded .accordionItem {
+  padding: 1.25rem 1rem 1.25rem 4rem;
+}
+
+.expanded .accordionContent {
+  opacity: 1;
+  max-width: 100%;
+}
+
+/* Loader */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ccc;
+  border-top: 5px solid #0070f3;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

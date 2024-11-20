@@ -1,0 +1,37 @@
+.page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.page h1,
+.page h2 {
+  font-family: var(--font-poiretOne);
+  
+}
+.page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.page h2 {
+  font-size: 1.8rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.page p {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.page ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.page li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
