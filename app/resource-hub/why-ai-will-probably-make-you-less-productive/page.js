@@ -57,8 +57,8 @@ export default function WhyAiWIllProbablyMakeYouLessProductive() {
       <div className={styles.content}>
         <p>
           Last month, I wrote about the Empathy Gradient, and while it resonated
-          with quite a few people, I wasn&rsquo;t able to make the full point in that
-          one article. So, I&rsquo;m going to expand on it through a few more,
+          with quite a few people, I wasn’t able to make the full point in that
+          one article. So, I’m going to expand on it through a few more,
           starting with this one, explaining how a new technology like AI will
           probably make you less productive before it makes you better. The link
           to the gradient will become clear in a few minutes.
@@ -69,17 +69,17 @@ export default function WhyAiWIllProbablyMakeYouLessProductive() {
           adopted is where the real impact begins. The problem is that we rush
           into embedding tech into our lives without really thinking about it
           and end up getting frustrated. This is normal and even has a name and
-          graph: the Productivity J-Curve. Before explaining it, let&rsquo;s look at
+          graph: the Productivity J-Curve. Before explaining it, let’s look at
           technology we now take for granted: electricity.
         </p>
         <p>
           When electricity started to get harnessed, it was a huge change that
-          took more than 70 years for households and 40&ndash;50 years for factories.
-          I&rsquo;m going to talk about that gap separately when I write about the
+          took more than 70 years for households and 40–50 years for factories.
+          I’m going to talk about that gap separately when I write about the
           impact of new technology on income inequality, but I want to focus on
           productivity today, so I will use factories as an example. When
           factories started electrifying machinery, they just swapped out the
-          old tech, steam, with the new tech, electricity, but they didn&rsquo;t
+          old tech, steam, with the new tech, electricity, but they didn’t
           change the way people worked and still had the layout of the factory
           based on steam power. Think of the difference between a factory that
           needs a steam engine in one section—where coal is used to produce
@@ -104,22 +104,22 @@ export default function WhyAiWIllProbablyMakeYouLessProductive() {
         <p>
           Now, picture what happens when you replace the steam engine with
           electricity but keep everything else the same. Nothing changes,
-          productivity doesn&rsquo;t just stay the same, it becomes worse. Electricity
+          productivity doesn’t just stay the same, it becomes worse. Electricity
           was meant to “change everything” (and we know that eventually, it
-          did). The problem is that, in the beginning, it didn&rsquo;t. Since the
+          did). The problem is that, in the beginning, it didn’t. Since the
           factories were designed for steam, simply replacing the power source
-          didn&rsquo;t have much of an effect.
+          didn’t have much of an effect.
         </p>
 
         <p>
-          It wasn&rsquo;t until the factories were redesigned—taking advantage of the
+          It wasn’t until the factories were redesigned—taking advantage of the
           decentralized power of electricity—that we saw an uplift in
           productivity.
         </p>
 
         <p>
           A great example is how Henry Ford changed the factory layout to an
-          assembly line. He couldn&rsquo;t have done it with the constraints of steam
+          assembly line. He couldn’t have done it with the constraints of steam
           power. The first step was placing machines where needed, and the
           second step was introducing the moving assembly line through conveyor
           belts. Now the cars would move past the workers as they performed
@@ -144,12 +144,19 @@ export default function WhyAiWIllProbablyMakeYouLessProductive() {
           Ford did and remap your way of working with the new technology in
           mind.
         </p>
-        <p>
-          That&rsquo;s exactly what the J-Curve shows o At first, AI might slow you
-          down as you figure out how to use AIh o If you keep working the same
-          way, you won&rsquo;t see much improvementh o But if you redesign the way you
-          work with AI in mind, you&rsquo;ll get the benefits and augment yourself.
-        </p>
+        <p>That’s exactly what the J-Curve shows:</p>
+        <ul>
+          <li>
+            At first, AI might slow you down as you figure out how to use AI.
+          </li>
+          <li>
+            If you keep working the same way, you won’t see much improvement.
+          </li>
+          <li>
+            But if you redesign the way you work with AI in mind, you’ll get the
+            benefits and augment yourself.
+          </li>
+        </ul>
         <div className={styles.imageContainer}>
           <Image
             src="/images/articles/why-ai-will-probably-make-you-less-productive/j-curve-1.jpg"
@@ -162,9 +169,17 @@ export default function WhyAiWIllProbablyMakeYouLessProductive() {
 
         <p>
           However, if you apply a new way of working with AI in mind—a way to
-          map your tasks, like the Empathy Gradient (you can find it here: The
-          Rationale Behind the Empathy Gradient)—you might be able to reach
-          productivity faster, as shown in the second graph with the added part.
+          map your tasks, like the Empathy Gradient (you can find it here:{" "}
+          <a
+            href="/resource-hub/the-rationale-behind-the-empathy-gradient"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}
+          >
+            The Rationale Behind the Empathy Gradient
+          </a>
+          )—you might be able to reach productivity faster, as shown in the
+          second graph with the added part.
         </p>
         <div className={styles.imageContainer}>
           <Image
@@ -180,7 +195,7 @@ export default function WhyAiWIllProbablyMakeYouLessProductive() {
         </div>
 
         <p>
-          Now, I&rsquo;m obviously biased toward a framework I wrote and my teams use,
+          Now, I’m obviously biased toward a framework I wrote and my teams use,
           but the important part isn't necessarily applying the Empathy
           Gradient. The important part is to rethink the way that you work with
           AI in mind and move from being a steam-powered factory to an electric
@@ -188,26 +203,14 @@ export default function WhyAiWIllProbablyMakeYouLessProductive() {
         </p>
 
         <p>
-          The second step is laying out the best use of AI on that gradient from
-          People Augmentation for the tasks that benefit from empathy to Task
-          Automation for the ones where empathy has a negative impact on the
-          ouctome. The gradient overlay is shown in Figure B.
-        </p>
-
-        <p>
-          We are now able to map tasks to the axis. Current mapping is
-          qualitative based on subject matter expert opinions, but the goal is
-          to create a quantitative process for the mapping. An example of mapped
-          tasks can be seen in Figure C.
-        </p>
-        <p>
           With that in mind, the next article will look at how new technologies
           like electricity and probably now AI have historically increased
           income inequality partly due to this J-Curve —and what that means for
           you.
         </p>
+
         <p>
-          Until then, think about how you&rsquo;re taking the right steps to adopt
+          Until then, think about how you’re taking the right steps to adopt
           this major change that seems to be in every conversation ad nauseam.
         </p>
       </div>

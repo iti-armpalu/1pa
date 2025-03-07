@@ -48,7 +48,6 @@
   color: #181818;
   margin-bottom: 10px;
   transition: font-size 0.5s ease; /* Apply transition to max-width */
-
 }
 
 @media only screen and (max-width: 1100px) {
@@ -73,8 +72,8 @@
   display: flex;
   flex-direction: row; /* This will lay the children in a horizontal row */
   align-items: center; /* Aligns items vertically in the center */
-justify-content: space-between;  margin-bottom: 4rem;
-
+  justify-content: space-between;
+  margin-bottom: 4rem;
 }
 
 .date {
@@ -118,4 +117,27 @@ justify-content: space-between;  margin-bottom: 4rem;
 .content .imageContainer img {
   width: 100%;
   height: auto;
+}
+
+/* Style for the link */
+.link {
+  color: var(--dark-navy);
+  text-decoration: none;
+}
+
+/* Add a hover effect */
+.link:hover {
+  text-decoration: underline; /* Underline the link on hover */
+}
+
+.content ul {
+  padding-left: 20px; /* Add space before the bullets */
+}
+
+.content li {
+  font-size: 1.1rem; /* Adjust font size */
+}
+
+.content ul li::marker {
+  font-size: 1.5rem; /* Increase bullet size */
 }
