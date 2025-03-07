@@ -195,7 +195,7 @@ export default function TheRationaleBehindTheEmpathyGradient() {
         </p>
         <h2>Example 1: Augmenting Insight Generation</h2>
         <p>
-          I’ve mapped insight generation to the &quot;High Empathy&quot; side
+          I’ve mapped insight generation to the "High Empathy" side
           because when interviewing strategists and talking to data and insights
           companies, the current consensus is that AI can show patterns, but a
           person can then understand how that pattern is a useful insight. One
