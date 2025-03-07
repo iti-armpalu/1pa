@@ -5,7 +5,7 @@ import ButtonPopup from "./button-popup";
 export default function ButtonNotify() {
   return (
     <ButtonPopup
-      buttonText="Notify Me"
+      buttonText="Notify me"
       PopupComponent={NotifyPopup}
       hasBorder={true}
     />

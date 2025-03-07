@@ -4,7 +4,7 @@ import ButtonPopup from "./button-popup";
 export default function ButtonSayHello() {
   return (
     <ButtonPopup
-      buttonText="Say Hello"
+      buttonText="Say hello"
       PopupComponent={SayHelloPopup}
       hasBorder={true}
     />

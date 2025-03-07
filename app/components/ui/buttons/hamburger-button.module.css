@@ -8,6 +8,7 @@
   z-index: 12;
   padding: 1rem 0;
   transition: 500ms;
+  color: var(--deep-teal);
   background: transparent;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);

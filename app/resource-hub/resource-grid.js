@@ -1,14 +1,10 @@
-"use client";
-
-// import ResourceGrid from "./resource-grid";
-
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { Flip } from "gsap/Flip";
-
-import styles from "./page.module.css";
-import ResourceCard from "./resource-card";
-import Button from "../components/ui/buttons/button";
+import Image from "next/image";
+import Link from "next/link";
+import styles from "./resource-grid.module.css";
+import ArrowOpenIcon from "../../public/icons/arrow-open.svg";
 
 gsap.registerPlugin(Flip);
 
@@ -16,10 +12,10 @@ const resources = [
   {
     id: 1,
     title: "The Rationale Behind the Empathy Gradient",
-    date: "September 8, 2024",
+    date: "March 5, 2025",
     image:
       "/images/ijalfreak_A_flat_abstract_illustration_blending_modern_minimali_613aa933-33ea-4d42-a72a-3be93ef38a21.png",
-    link: "/resource-hub/the-rationale-behind-the-empathy-gradient",
+    link: "/resources/ai-for-entrepreneurs",
     format: "Article",
   },
   {
@@ -28,34 +24,21 @@ const resources = [
     date: "February 20, 2025",
     image:
       "/images/ijalfreak_A_flat_abstract_illustration_blending_modern_minimali_0e2368dd-f63d-4d39-96bf-587a10b34d18.png",
-    link: "/resource-hub/why-ai-will-probably-make-you-less-productive",
+    link: "/resources/empathy-gradient",
     format: "Article",
   },
 ];
 
-export default function ResourceHubPage() {
-  const [isLoaded, setIsLoaded] = useState(false);
+export default function ResourceGrid() {
   const [isListView, setIsListView] = useState(false); // Default state can be false
-  const mainRef = useRef(null);
+  const [selectedFormat, setSelectedFormat] = useState(null);
+
   const containerRef = useRef(null);
+
   const imagesRef = useRef([]); // Store image elements separately
   const titlesRef = useRef([]);
   const datesRef = useRef([]);
   const formatRef = useRef([]);
-
-  useEffect(() => {
-    setIsLoaded(true);
-  }, []);
-
-  useEffect(() => {
-    if (!isLoaded) return;
-
-    gsap.fromTo(
-      mainRef.current.children, // target all child elements
-      { opacity: 0, y: 50 }, // initial state
-      { opacity: 1, y: 0, duration: 1.5, ease: "power2.out", stagger: 0.2 } // final state with stagger
-    );
-  }, [isLoaded]);
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -70,7 +53,7 @@ export default function ResourceHubPage() {
     datesRef.current = gsap.utils.toArray(
       containerRef.current.querySelectorAll(`.${styles.date}`)
     );
-    formatRef.current = gsap.utils.toArray(
+    datesRef.current = gsap.utils.toArray(
       containerRef.current.querySelectorAll(`.${styles.formatButton}`)
     );
 
@@ -95,36 +78,56 @@ export default function ResourceHubPage() {
     setIsListView((prev) => !prev);
 
     // Uses gsap.delayedCall(0.1, callbackFunction) Why delay? React’s state update is asynchronous → The layout change may not be fully applied when Flip starts. This ensures the DOM updates before the animation runs.
+    // gsap.delayedCall(0.1, () => {
     requestAnimationFrame(() => {
       // Flip.from(state, {...}) tells GSAP to animate from the old state to the new state. Animation properties explained: duration: 0.6 → The animation lasts 0.6 seconds. scale: true → Images scale up/down smoothly if their size changes. stagger: 0.1 → Each image starts 0.1 seconds after the previous one. ease: "power2.inOut" → Uses a smooth easing to make the transition feel natural.
       Flip.from(state, {
         duration: 0.6,
         scale: true,
+        // stagger: 0.1,
         ease: "power2.inOut",
       });
     });
   };
 
   return (
-    <main className={styles.page} ref={mainRef}>
+    <>
       <div className={styles.header}>
         <h1 className={styles.title}>Resource Hub</h1>
-        <Button type="button" onClick={toggleView}>
-        Toggle view
-      </Button>
+        <button onClick={toggleView} className={styles.toggleButton}>
+          Change View
+        </button>
       </div>
       <div
         ref={containerRef}
         className={`${styles.grid} ${isListView ? styles.listView : ""}`}
       >
         {resources.map((resource) => (
-          <ResourceCard
-            key={resource.id}
-            resource={resource}
-            isListView={isListView}
-          />
+          <Link key={resource.id} href={resource.link} className={styles.card}>
+            <Image
+              src={resource.image}
+              alt={resource.title}
+              width={isListView ? 178 : 446}
+              height={isListView ? 100 : 250}
+              className={styles.image}
+            />
+            <div>
+              <h2 className={styles.resourceTitle}>{resource.title}</h2>
+              <p className={styles.date}>{resource.date}</p>
+            </div>
+
+            <button className={styles.formatButton}>{resource.format}</button>
+
+            <div className={styles.arrow}>
+              <Image
+                src={ArrowOpenIcon}
+                alt="Arrow Open Icon"
+                className={styles.icon}
+              />
+            </div>
+          </Link>
         ))}
       </div>
-    </main>
+    </>
   );
 }

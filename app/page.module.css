@@ -1,28 +1,52 @@
-
+/* Base styles for .page */
 .page {
   padding: 2rem 2rem 2rem 4rem;
   max-width: 800px;
   margin: 2rem auto;
   text-align: left;
+  position: relative;
+  transition: max-width 0.5s ease; /* Apply transition to max-width */
+}
+
+/* Common properties for h1 and p */
+.page h1,
+.page p {
+  margin-bottom: 3rem;
 }
 
 .page h1 {
   font-family: var(--font-poiretOne);
   font-size: 2rem;
   font-weight: bold;
-  color: #333;
-  margin-bottom: 3rem;
 }
 
 .page p {
   font-size: 1.2rem;
-  color: #555;
   line-height: 1.6;
-  margin-bottom: 3rem;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1100px) {
+  .page {
+    max-width: 700px;
+    padding: 2rem 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .page {
+    max-width: 600px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .page {
+    max-width: 500px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .page {
-    padding: 2rem 1.25rem 2rem 1.25rem;
+    max-width: 100vw;
   }
 }

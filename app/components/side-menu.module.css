@@ -6,7 +6,7 @@
   height: 100vh;
   z-index: 1;
   margin-top: 3.75rem;
-  background-color: var(--background);
+  background-color: var(--warm-beige-80);
   transform: translateX(-100%); /* Start hidden */
   transition: transform 0.3s ease-in-out; /* Smooth slide-in and slide-out */
 }
@@ -41,7 +41,7 @@
 
 .navLinks a {
   text-decoration: none;
-  color: #333;
+  color: var(--dark-navy-40);
   font-size: 3rem;
   margin: 1rem 0;
   transition: color 0.3s ease-in-out;

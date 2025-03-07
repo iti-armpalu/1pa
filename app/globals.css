@@ -1,6 +1,19 @@
 :root {
-  --background: #f8f8f8;
-  --foreground: #171717;
+  --warm-beige: #FDF2DE;
+  --warm-beige-20: #FAEBD1;
+  --warm-beige-40: #F7E5C4;
+  --warm-beige-60: #FEFAF2;
+  --warm-beige-80: #F6F4F0;
+
+  --soft-teal: #6CAC9F;
+  --vibrant-orange: #FC6415;
+  --deep-teal: #16545E;
+
+  --dark-navy: #103236;
+  --dark-navy-20: #3B4F52;
+  --dark-navy-40: #667C7E;
+  --dark-navy-60: #91A9AA;
+  --dark-navy-80: #BCC6C6;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -17,8 +30,8 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background-color: var(--background);
+  color: var(--deep-teal);
+  background-color: var(--warm-beige-80);
   font-family: var(--font-josefinSans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -49,9 +62,13 @@ button {
   transition: all 0.6s ease-in-out;
 }
 
+h1 {
+  color: var(--dark-navy);
+}
+
 p {
   font-size: 1.2rem;
-  color: #555;
+  color: var(--dark-navy-40);
   line-height: 1.6;
 }
 
