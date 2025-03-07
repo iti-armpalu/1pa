@@ -60,8 +60,7 @@ export default function TheRationaleBehindTheEmpathyGradient() {
         <p>
           The future of work in an AI-driven world is often difficult to predict
           due to the speculative nature of the question. However, a significant
-          barrier to understanding AI’s impact is the flawed foundation of many
-          current studies being circulated in reputable business publications
+          barrier to understanding AI&rsquo;s impact is the flawed foundation of many current studies being circulated in reputable business publications
           such as the McKinsey Quarterly, Financial Times (FT), and Harvard
           Business Review (HBR). These studies frequently present skewed
           findings because they rely on outdated frameworks.
@@ -69,14 +68,14 @@ export default function TheRationaleBehindTheEmpathyGradient() {
         <h2>Misleading AI Studies: A Flawed Foundation</h2>
         <p>
           Take, for example, the McKinsey studies published in 2021, which aim
-          to shed light on AI’s impact. The problem lies in the fact that their
+          to shed light on AI&rsquo;s impact. The problem lies in the fact that their
           analysis is built on the McKinsey Global Institute (MGI) research from
           2017, which focuses on automation scenarios. These studies give undue
           weight to traditional optimization methods, arriving at conclusions
           similar to those of conventional cost-reduction models.
         </p>
         <p>
-          Relevant quote: &quot;This research builds on MGI’s January 2017
+          Relevant quote: &quot;This research builds on MGI&rsquo;s January 2017
           report on automation and its impact on work activities. We assess the
           number and types of jobs that might be created under different
           scenarios through 2030 and compare that to work that could be
@@ -120,7 +119,7 @@ export default function TheRationaleBehindTheEmpathyGradient() {
         </p>
         <p>
           The next step is understanding that AI can replicate the majority of
-          thinking and creative work, it just doesn’t do it as well as humans,
+          thinking and creative work, it just doesn&rsquo;t do it as well as humans,
           for now. However, if the quality of the output is not important and
           the objective is e ciency of process with time or cost as the primary
           KPIs, then AI is either better than people or will become better than
@@ -195,7 +194,7 @@ export default function TheRationaleBehindTheEmpathyGradient() {
         </p>
         <h2>Example 1: Augmenting Insight Generation</h2>
         <p>
-          I’ve mapped insight generation to the High Empathy side
+          I&rsquo;ve mapped insight generation to the &quot;High Empathy&quot; side
           because when interviewing strategists and talking to data and insights
           companies, the current consensus is that AI can show patterns, but a
           person can then understand how that pattern is a useful insight. One
@@ -221,7 +220,7 @@ export default function TheRationaleBehindTheEmpathyGradient() {
           system analyzes the ad content and provides recommendations on how to
           improve its effectiveness, particularly in terms of making a stronger
           cognitive impact on the audience. By automating this process, the
-          system helps optimize the ad’s performance without requiring human
+          system helps optimize the ad&rsquo;s performance without requiring human
           intervention for the evaluation.
         </p>
         <div className={styles.imageContainer}>
@@ -236,7 +235,7 @@ export default function TheRationaleBehindTheEmpathyGradient() {
         <p>
           Over time, I plan to evaluate a lot more of those tools and try to
           make sense of the insane number of tools out there that have the
-          potential to augment us. I’ll keep you posted.
+          potential to augment us. I&rsquo;ll keep you posted.
         </p>
       </div>
     </div>
