@@ -14,12 +14,6 @@
   margin-bottom: 3rem;
 }
 
-.page h1 {
-  font-family: var(--font-poiretOne);
-  font-size: 2rem;
-  font-weight: bold;
-}
-
 .page p {
   font-size: 1.2rem;
   line-height: 1.6;

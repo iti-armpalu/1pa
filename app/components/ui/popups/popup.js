@@ -48,7 +48,15 @@ export default function Popup({
               {description}
             </motion.p>
           </div>
-          {children}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            variants={fadeInUp}
+            transition={{ duration: 0.6, delay: 0.8 }}
+          >
+            {children}
+          </motion.div>
         </div>
       </div>
     </div>

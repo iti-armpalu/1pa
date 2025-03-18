@@ -34,7 +34,7 @@ export default function Header() {
       <header className={styles.header}>
         <div className={styles.logo}>
           <Link href="/">
-            <h6>One Person Army</h6>
+            <h6>1PA</h6>
           </Link>
         </div>
         {isMediumOrLarger ? (

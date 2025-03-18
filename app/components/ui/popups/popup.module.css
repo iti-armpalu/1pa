@@ -70,7 +70,7 @@
   font-size: 1.2rem;
   text-align: center;
   line-height: 2.5rem;
-  color: #ffffff;
+  color: var(--deep-teal);
 }
 
 .close:hover {
@@ -83,10 +83,9 @@
 }
 
 .title h6 {
-  font-family: var(--font-poiretOne);
   font-size: 1.875rem;
   line-height: 1.2;
-  color: #ffffff;
+  color: var(--dark-navy);
 }
 
 .title p {
@@ -101,7 +100,7 @@
   }
 
   .title h6 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 

@@ -9,7 +9,7 @@ const accordionItems = [
   { id: 1, title: "Coming Soon", link: "/" },
   { id: 2, title: "Resource Hub", link: "/resource-hub" },
   { id: 3, title: "Meet the People", link: "/meet-the-people" },
-  { id: 4, title: "About 1 PA", link: "/about-1PA" },
+  { id: 4, title: "About 1PA", link: "/about-1PA" },
 ];
 
 export default function Accordion({ children }) {

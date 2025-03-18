@@ -15,7 +15,8 @@
 }
 
 .logo h6 {
-  font-family: var(--font-poiretOne);
+  font-family: var(--font-fonseca-medium);
+  color: var(--dark-navy);
   font-size: 2rem;
   line-height: 3.75rem;
 }

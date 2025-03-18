@@ -52,8 +52,7 @@ a {
 button {
   border: none;
   outline: none;
-  color: #0a2e2f;
-  font-family: var(--font-josephinSans);
+  font-family: var(--font-inter);
   background-color: transparent;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transition: all 0.6s ease-in-out;
@@ -62,13 +61,19 @@ button {
   transition: all 0.6s ease-in-out;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: var(--deep-teal);
+  font-family: var(--font-fonseca-medium);
+}
+
 h1 {
-  color: var(--dark-navy);
+  font-size: 2rem;
 }
 
 p {
-  font-size: 1.2rem;
+  font-family: var(--font-josefinSans);
   color: var(--deep-teal);
+  font-size: 1.2rem;
   line-height: 1.6;
 }
 

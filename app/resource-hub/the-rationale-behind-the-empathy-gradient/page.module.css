@@ -44,28 +44,26 @@
 }
 
 .title {
-  font-size: 4rem;
-  color: #181818;
+  font-size: 3.5rem;
   margin-bottom: 10px;
   transition: font-size 0.5s ease; /* Apply transition to max-width */
-
 }
 
 @media only screen and (max-width: 1100px) {
   .title {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 }
 
 @media only screen and (max-width: 900px) {
   .title {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
   }
 }
 
 @media only screen and (max-width: 800px) {
   .title {
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
 }
 
@@ -73,8 +71,8 @@
   display: flex;
   flex-direction: row; /* This will lay the children in a horizontal row */
   align-items: center; /* Aligns items vertically in the center */
-justify-content: space-between;  margin-bottom: 4rem;
-
+  justify-content: space-between;
+  margin-bottom: 4rem;
 }
 
 .date {

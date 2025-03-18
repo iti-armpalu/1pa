@@ -18,9 +18,7 @@ const ResourceCard = ({ resource, isListView }) => {
         <h2 className={styles.resourceTitle}>{resource.title}</h2>
         <p className={styles.date}>{resource.date}</p>
       </div>
-
       <button className={styles.formatButton}>{resource.format}</button>
-
       <div className={styles.arrow}>
         <Image
           src={ArrowOpenIcon}

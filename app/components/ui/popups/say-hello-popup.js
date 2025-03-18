@@ -10,7 +10,7 @@ export default function SayHelloPopup(props) {
     <Popup
       isPopupOpen={isPopupOpen}
       onClose={onClose}
-      title="Lets talk!"
+      title="Let's talk!"
       description=" Have any interesting ideas or topics? Happy to discuss them with you."
     >
       <SayHelloForm />
