@@ -45,6 +45,9 @@
 .expanded {
   flex: 4;
   background-color: var(--warm-beige-60);
+  /* background: 
+    linear-gradient(20deg, var(--warm-beige-60), transparent), 
+    url("/grainy.svg"); */
   overflow-y: auto;
 }
 

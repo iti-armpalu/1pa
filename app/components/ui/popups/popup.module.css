@@ -35,7 +35,10 @@
   position: relative;
   width: 100%;
   height: auto;
-  background-color: rgba(255, 255, 255, 0.5);
+  /* background-color: rgba(255, 255, 255, 0.5); */
+    background: 
+    linear-gradient(20deg, rgba(254, 250, 242, 0.5), rgba(254, 250, 242, 0.2)), 
+    url("/grainy.svg");
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
@@ -44,8 +47,8 @@
     0 15px 12px rgba(0, 0, 0, 0.22);
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   padding: 2.125rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.07);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  /* border-top: 1px solid rgba(255, 255, 255, 0.07);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07); */
   z-index: 1;
 }
 
@@ -70,7 +73,7 @@
   font-size: 1.2rem;
   text-align: center;
   line-height: 2.5rem;
-  color: var(--deep-teal);
+  color: var(--dark-navy);
 }
 
 .close:hover {
@@ -82,25 +85,17 @@
   margin-bottom: 2.625rem;
 }
 
-.title h6 {
-  font-size: 1.875rem;
-  line-height: 1.2;
-  color: var(--dark-navy);
+.title p {
+  margin-top: 1.5rem;
 }
 
-.title p {
-  margin: 1.5rem 0;
-}
+
 
 @media only screen and (min-width: 768px) {
   .content {
     max-width: 510px;
     padding: 2.125rem 2.125rem;
     margin: 0 auto;
-  }
-
-  .title h6 {
-    font-size: 2rem;
   }
 }
 

@@ -20,18 +20,17 @@
   background-color: transparent;
   padding: 0.8rem 0.1rem 0.75rem 0.1rem;
   font-family: var(--font-josefinSans);
-  font-size: 1.2rem;
-  -webkit-transition: border 0.3s, background-color 0.3s ease-in-out;
-  -o-transition: border 0.3s, background-color 0.3s ease-in-out;
-  -moz-transition: border 0.3s, background-color 0.3s ease-in-out;
-  transition: border 0.3s, background-color 0.3s ease-in-out;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
   border-bottom: 1px solid Var(--dark-navy);
   color: var(--deep-teal);
 }
 
 .form input {
-  height: 3.125rem;
-  margin: 1.5rem 0 1rem;
+  margin: 0.5rem 0;
 }
 
 .form textarea {
@@ -40,13 +39,21 @@
   margin: 0 0 2.625rem 0;
 }
 
+@media only screen and (min-width: 768px) {
+  .form input {
+    height: 3.125rem;
+    margin: 1.5rem 0 1rem;
+  }
+}
+
+
 .form input:focus,
 .form textarea:focus {
   border-bottom: 1px solid var(--deep-teal);
 }
 
 .form .error {
-  color: #ed4337;
+  color: var(--vibrant-orange);
 }
 
 .form p {

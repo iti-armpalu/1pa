@@ -7,12 +7,9 @@
   transition: max-width 0.5s ease; /* Apply transition to max-width */
 }
 
-.page h1 {
-  margin-bottom: 1rem;
-}
 
-.page p {
-  margin-bottom: 1rem;
+.page h1, .page p {
+  margin-bottom: 3rem;
 }
 
 /* Media Queries */

@@ -1,9 +1,6 @@
-
 .btn {
   position: relative;
   display: inline-block;
-  font-family: var(--font-josephinSans);
-  font-size: 1rem;
   height: 2.5rem;
   line-height: 2.5rem;
   text-align: center;
@@ -41,7 +38,6 @@
 .btn .title {
   display: block;
   position: relative;
-  font-size: 1rem;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -64,7 +60,6 @@
   top: 0;
   left: 0;
   padding: 0 1rem;
-  font-size: 1rem;
   -webkit-transform: translateY(100%);
   -moz-transform: translateY(100%);
   -ms-transform: translateY(100%);
