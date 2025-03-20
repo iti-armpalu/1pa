@@ -26,7 +26,11 @@
   -moz-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
   border-bottom: 1px solid Var(--dark-navy);
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
   color: var(--deep-teal);
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .form input {
@@ -45,7 +49,6 @@
     margin: 1.5rem 0 1rem;
   }
 }
-
 
 .form input:focus,
 .form textarea:focus {

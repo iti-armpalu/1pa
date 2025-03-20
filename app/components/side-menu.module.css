@@ -48,5 +48,5 @@
 }
 
 .navLinks a:hover {
-  color: #0070f3;
+  color: var(--deep-teal);
 }
